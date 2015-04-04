@@ -1,0 +1,22 @@
+<html>
+<script>
+
+
+var doubleIt = function(x) {
+  return x * 2;
+}
+
+var tripleIt = function(y) {
+  return y * 3;
+}
+
+var inception = function(a,b) {
+  return a(b);
+}
+
+console.log(
+  inception( doubleIt,tripleIt(2) )
+  );
+
+</script>
+</html>

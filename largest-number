@@ -1,0 +1,32 @@
+<html>
+<script>
+
+var array = ["hello", 99, 1, 2, 3, "world", 4];
+
+var arrayFunction = function(array) {
+
+  // Create a second array
+  var newArray = []
+
+  // Push elements to new array only if the element is a number
+  for (i=0; i<array.length; i++) {
+    if (typeof array[i] == "number")
+      { newArray.push(array[i]) }
+  }
+
+  // Sort the array from lowest to highest
+  newArray.sort()
+
+  // Print the result
+  if (newArray.length > 0) {
+    console.log ("The highest number is " + newArray[newArray.length - 1]  )
+  } else {
+    console.log ("There is no number in this array!")
+  }
+}
+
+// Execute the function
+arrayFunction(array)
+
+</script>
+</html>
