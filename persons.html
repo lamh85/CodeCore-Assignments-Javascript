@@ -1,0 +1,33 @@
+<html>
+<script>
+
+var functionVar = function (person) {
+  if (person.age < this.age) {
+    console.log ( "Yo " + person.name + ". I'm totally " + this.name + "." );
+  } else {
+    console.log ( "Hello, " + person.name + ". I am " + this.name + ". Pleased to meet you." );
+  }
+}
+
+var John = {
+  age: 20,
+  name: "John",
+  greet: functionVar
+}
+
+var Jane = {
+  age: 30,
+  name: "Jane",
+  greet: functionVar
+}
+
+</script>
+</html>
+
+<!-- 
+- Create two person objects with an "age" attribute and a "name" attribute.
+
+- Add a "greet" method to both people that accepts a person as a parameter and outputs the following:
+
+"Hello, [name]. I am [name]. Pleased to meet you." if the other person is older than this person.
+"Yo [name]. I'm totally [name]. Wsup!." if the other person is older than this person. -->
